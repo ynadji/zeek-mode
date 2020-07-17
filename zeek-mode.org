@@ -1,7 +1,7 @@
-#+TITLE: Bro Mode for Emacs
+#+TITLE: Zeek Mode for Emacs
 
 * Highlighting
-  Taken from Matthias Vallentin's [[https://github.com/mavam/brogments/blob/master/bro_lexer/bro.py][pygments]] lexer for Bro.  
+  Taken from Matthias Vallentin's [[https://github.com/mavam/brogments/blob/master/bro_lexer/bro.py][pygments]] lexer for Zeek.  
 ** DONE Keywords
    CLOSED: [2012-06-26 Tue 15:10]
    add,alarm,break,case,const,continue,delete,do,else,enum,event,export,for,function,if,global,local,module,next,of,print,redef,return,schedule,type,when,while
@@ -22,11 +22,11 @@
 ** DONE Breaking Lines repeats the previous indentation.
    CLOSED: [2012-06-26 Tue 15:31]
    If we match only on whether or not the end of the line is ".*,$" it will constantly indent when a split statement spans multiple lines.
-   Solved this by removing the following from bro-indent-line
+   Solved this by removing the following from zeek-indent-line
    #+begin_src elisp
      ;;(setq not-indented nil))
    #+end_src
-   to let bro-indent-line propagate up.
+   to let zeek-indent-line propagate up.
    
 * References
   1. [[http://www.emacswiki.org/emacs/ModeTutorial][ModeTutorial on Emacs Wiki]]
